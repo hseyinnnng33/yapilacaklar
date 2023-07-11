@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+#genel{
+    background-color: #f1f2f6; 
+    min-height: 100vh;  
+    position: relative;
+}
+
+.ust{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+}
+
+.ust .icerik{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.genel_h2{
+    font-size: 20px;
+}
+
+.genel_h2 span{
+    font-size: 20px;
+    color: #b36cd2;
+    font-weight: bold;
+}
+
+.main{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.main .icerik-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.icerik-main .ilk-h2{
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.listeler{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.listeler .kart{
+    min-width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    background-color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.kart .box{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #c1c1cc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.kart.active .box{
+    -webkit-appearance: auto;
+}
+
+.kart.active{
+    background-color: #2ecc71;
+}
+
+.kart.active h2{
+    color: #fff;
+}
+
+.kart h2{
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.tam-liste{
+    max-width: 1200px;
+    margin: 10px auto 20px auto;
+    height: 100px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.tam-liste h2{
+    font-size: 20px;
+}
+
+.tam-liste .tam{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: .5s;
+    /* position: fixed;
+    left: 0%;
+    right: 0;
+    left: 0; */
+}
+
+.icerik_1{
+    background-color: #2ecc71;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    max-width: 1200px;
+}
+
+.tam.active{
+    max-width: 1150px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+@media (max-width: 900px){
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .tam-liste .tam{
+        width: 90%;
+        margin: 0 auto;
+        background-color: #f1f2f6;
+        border-radius: 10px;
+        height: 40px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        transition: .5s;
+        position: fixed;
+        left: 0%;
+        right: 0;
+    }
+    
+    .icerik_1{
+        background-color: #b36cd2;
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        transition: .5s;
+        max-width: 1200px;
+    }
+    
+    
+    
+}
